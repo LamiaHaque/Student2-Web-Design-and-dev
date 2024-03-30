@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Saving Environment</title>
+<link rel="icon" type="image/x-icon" href="https://www.un.org/sites/un2.un.org/files/2021/03/un-logo.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<style>
+
+body, h1, h3, p, ul, li {
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-stroke: 1.8px rgb(136, 208, 149);
+  }
+  
+  body {
+    margin: 0;
+    background: white; /* Changing background color to white */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0; /* Add padding to the container */
+  }  
+
+  header {
+    background: #9ad5f5; /* Changing top color to very light blue */
+    padding: 10px 0; /* Adding padding for better spacing */
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    display: inline-block; /* Display the logo as inline block */
+    margin-right: 20px; /* Add margin to the right to move it to the left */
+  }
+  
+  .logo img {
+    width: 110px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav {
+    display: inline-block; /* Display the navigation as inline block */
+    font-size: 12px; /* Make font size smaller */
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Display menu items as flex */
+  }
+  
+  nav li {
+    margin-left: 20px; /* Adjust the margin between menu items */
+    padding-top: 23px;
+    position: relative;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    padding: 0 10px; /* Add padding to the menu items */
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+  .welcome-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.welcome-section img {
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+  .welcome-section h2 {
+    color: #033655;
+    margin-bottom: 5px;
+    font-size: 28px;
+  }
+
+  .welcome-section p {
+    color: #207f23;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery-item {
+    width: 48%; /* Adjusted width to fit two items in a row */
+    margin-bottom: 20px;
+  }
+
+  .gallery-item img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  }
+
+  .desc {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 3px solid #4caf50;
+  }
+
+  .mission {
+    background-color: #c0d6c2; /* Light background color */
+    padding: 40px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center; /* Center-align content */
+    max-width: 800px; /* Limit maximum width for readability */
+    margin: 0 auto; /* Center horizontally */
+  }
+
+  .mission h2 {
+    color: #0c420e;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .mission p {
+    color: #1d671f;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  #topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #87CEEB; /* Light sky blue background for "Go to top" button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 5px; /* Add rounded corners to "Go to top" button */
+}
+
+#topButton:hover {
+    background-color: #4682B4; /* Darker sky blue background on hover */
+}
+
+
+</style>
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo"><img src="/Users/lamiasadia/Desktop/Web Design and development html css javascript code/Screenshot 2024-03-24 at 23.38.07.png" alt="Your Logo"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="user_profile.html">User profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="welcome-section">
+    
+      <h2>Welcome to ALFSU - Our Climate Saving Environment Page</h2>
+      <p>
+        Your gateway to environmental advocacy and action! We're excited to have you join us on our journey toward a greener, more sustainable future. Here, you'll discover a wealth of resources, from insightful articles to captivating galleries, all aimed at raising awareness and inspiring positive change. Together, let's embark on this mission to protect and preserve our precious planet. Start exploring, get inspired, and let's make a difference together!
+      </p>
+      <a target="_blank" href="#">
+        <img src="istockphoto-943875208-170667a.webp" alt="Climate Change and Its Impacts" width="500">
+      </a>
+    </div>
+    <br>
+    <br>
+    
+  
+    <div class="mission">
+      <h2>Mission Statement</h2>
+      <p>At ALFSU, we are on a mission to champion environmental conservation and combat the urgent threat of climate change. Through our comprehensive resources, including articles, guides, and a dedicated climate-saving environment gallery, we aim to raise awareness and inspire action towards a more sustainable future. By showcasing the beauty of our planet and highlighting the pressing need for preservation, we empower individuals to become stewards of the environment and drive positive change. Together, let's protect and nurture our planet for generations to come.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="gallery">
+      <h2>Articles about discover Crucial Insights into Climate Change and Its Ramifications:</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div class="gallery-item">
+          <a href="content_ST1.html">
+            <img src="/Users/lamiasadia/Documents/Web design and dev coursework/images.png" alt="Climate Change and Its Impacts">
+          </a>
+          <div class="desc">
+            <h3>Renewable Energy's Key Role in Climate Action:</h3>
+            <p>As everyone knows we as a species rely on vast amounts of energy in out daily lives. In general, there are two types of energy being renewable & non-renewable, examples of renewable energy sources include; wind, solar and nuclear, whereas non-renwable energy resources include fossil fuels which are coal, oil and natural gas these are also called finite resources as they will run out. Furthermore, by incressingly using fossil fuels, we increase our greenhouse emissions which can result in great climate change implications. However, by using renewable energy sources we can help decrease the greenhouse gases which greatly help mitigate climate change. In addition, by protecting naturally occuring ecosystems, we are further developing hydropower sources of electresity and bioenergy.
+              <a href="content_ST1.html">Click here or on the image for more info on the content.</a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="gallery-item">
+          <a href="content_ST2.html">
+            <img src="/Users/lamiasadia/Desktop/Web Design and development html css javascript code/green_solutions_new_EN.jpg" alt="Exploring Sustainability in the Face of Climate Change:">
+          </a>
+          <div class="desc">
+            <h3>Exploring Sustainability in the Face of Climate Change:</h3>
+            <p>Exploring Sustainability: Weather, Mobility, Finance, Efficiency delves into crucial aspects of sustainable development. It examines weather's impact and the need for climate adaptation, explores eco-friendly mobility solutions, addresses financial risks, and underscores efficiency strategies for lasting environmental and economic sustainability.
+              <a href="content_ST2.html">Click here or on the image for more info on the content.</a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="gallery-item">
+          <a href="content_ST3.html">
+            <img src="/Users/lamiasadia/Desktop/Web Design and development html css javascript code/climate_change_health_impacts600w.jpg" alt="Climate change and its impact">
+          </a>
+          <div class="desc">
+            <h3>Climate Change and Its Impacts:</h3>
+            <p>Climate change is a significant global issue with far-reaching consequences. Rising temperatures, shifting weather patterns, and melting ice caps are just a few of the effects impacting ecosystems and societies worldwide. Understanding these impacts is crucial for developing effective mitigation and adaptation strategies.
+              <a href="content_ST3.html">Click here or on the image for more info on the content.</a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="gallery-item">
+          <a href="content_ST4.html">
+            <img src="plastic-waste-single-use-worldwide-consumption-animals-2_3x4.avif" alt="Sea Life">
+          </a>
+          <div class="desc">
+            <h3>Life under the sea:</h3>
+            <p>Sea life is important to the environment as it is a vital part to making the environment a better place. The sea is home to many species living in the ocean, it is their home and we littering and wasting it's water can cause harm to them, their habitat and us. We should take action immediately so we can make a safer environment for all of us.
+              <a href="content_ST4.html">Click here or on the image for more info on the content.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button id="topButton" onclick="goToTop()">Go to top</button>
+      <script>
+        // Show or hide "Go to top" button based on scroll position
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topButton").style.display = "block";
+            } else {
+                document.getElementById("topButton").style.display = "none";
+            }
+        }
+
+        // Scroll to top function
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+<footer>
+  <p>© 2024 Climate Saving Environment</p>
+  <p><a href="pageEditor _ST2.html">Page Editor</a></p>
+</footer>
+</body>
+</html>
